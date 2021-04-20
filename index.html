@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</head> 
+<body>
+    <h1 class = 'test'>jquery 練習項目</h1>
+    <!-- <button type="submit">submit</button> -->
+    <table>
+        <thead>
+            <th>Effect</th>
+            <th>Button</th>
+            <th>Result</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>點擊後隱藏</td>
+                <td><button type="submit" id = "hideButton">click here</button></td>
+                <td><p id = 'hide'>Hello World</p></td>
+            </tr>
+            <tr>
+                <td>雙擊後換字</td>
+                <td><button type="submit" id = "dblclickButton">dblclick here</button></td>
+                <td>
+                    <p id = 'dblBefore'>Hello World</p>
+                </td>
+            </tr>
+            <tr>
+                <td>toggle(hide+show)</td>
+                <td><button type="submit" id = "toggleButton">click here</button></td>
+                <td>
+                    <p id = 'toggle'>Hello World</p>
+                </td>
+            </tr>
+            <tr>
+                <td>漸入漸出fadeIn, fadeOut, fadeToggle, fadeTo</td>
+                <td><button type="submit" id = "fadeButton">click here</button></td>
+                <td>
+                    <div id = 'div1'></div>
+                    <div id = 'div2'></div>
+                    <div id = 'div3'></div>
+                </td>
+            </tr>
+            <tr>
+                <td>slideIn, slideOut, slideToggle</td>
+                <td><button type="submit" id = "slideButton">click here</button></td>
+                <td>
+                    <p id = 'slide'>Hello World</p>
+                    <p id = 'slide2'>Show You</p>
+                </td>
+            </tr>
+            <tr>
+                <td>animate</td>
+                <td><button type="submit" id = "animateButton">click here</button></td>
+                <td>
+                    <p id = 'animate'>Hello World</p>
+                </td>
+            </tr>
+            <tr>
+                <td>stop</td>
+                <td>
+                    <button type="submit" id = "moveButton">click here</button>
+                    <button type="submit" id = "stopButton">stop</button>
+                </td>
+                <td>
+                    <p id = 'stop'>Hello World</p>
+                </td>
+            </tr>
+            <tr>
+                <td>chaining</td>
+                <td><button type="submit" id = "chainButton">click here</button></td>
+                <td>
+                    <p id = 'chain'>Hello World</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
