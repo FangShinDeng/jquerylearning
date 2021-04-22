@@ -72,9 +72,23 @@ $(()=>{
 // ajax
 $(()=>{
     $("#ajaxButton").click(()=>{
-        $("#ajax").load('demo.txt')
+        $("#ajax").load('demo.json', function(resTxt, statusTxt, xhr){
+            if (statusTxt == "success")
+               alert("外部内容加载成功！");
+            if(statusTxt=="error")
+                alert("Error: "+xhr.status+": "+xhr.statusText);
+        })
     })
 })
+
+// $("ajaxButton").click(function(){
+//     $("#ajax").load("demo.txt",function(responseTxt,statusTxt,xhr){
+//       if(statusTxt=="success")
+//         alert("外部内容加载成功！");
+//       if(statusTxt=="error")
+//         alert("Error: "+xhr.status+": "+xhr.statusText);
+//     });
+//   });
 
 $(function(){
     $("#getButton").click(()=>{
