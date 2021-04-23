@@ -14,3 +14,24 @@ fetchAPI參考文獻: https://developer.mozilla.org/zh-TW/docs/Web/API/Fetch_API
 
 ## flaskForm (基礎form請求返回作法)
 用flask的方式去完成表單
+
+## flask 搭配 ajax 完成ajaxForm
+file: app.py, js/ajaxform
+參考文獻: https://github.com/PrettyPrinted/AJAX_Forms_jQuery_Flask
+
+重點邏輯: 建立html後, 用jquery去獲得輸入框內的值, 然後用ajax帶data向接口請求返回內容
+
+## ajax 用法
+參考文獻: https://medium.com/tsungs-blog/jquery-ajax-67bbd322ee69
+https://www.fooish.com/jquery/ajax.html
+
+### $.ajax的一般格式
+$.ajax({
+    type: 'POST',
+    url: url ,
+    data: data ,
+    success: success ,
+    dataType: dataType
+});
+
+$.getJSON(url, callback)
